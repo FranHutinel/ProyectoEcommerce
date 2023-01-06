@@ -7,7 +7,8 @@ listar los productos en tarjetas, tener botones de compra, link al carro
 de compras y un footer con info de la tienda, también debe tener una
 página de descripción de productos.
 
-Agrupación
+Agrupación del proyecto
+
 🚀La estructura de carpetas del proyecto es la siguiente:
 
 Carpeta assets. Esta contiene los directorios de img y js y css.
