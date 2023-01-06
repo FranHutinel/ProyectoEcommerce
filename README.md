@@ -1,6 +1,12 @@
 javascript-fullstack-Proyecto primera etapa
 Primera etapa de proyecto final perteneciente al curso Javascript Fullstack.
 
+La entrega consiste en la creación del frontend de una tienda e-commerce, 
+la cual debe tener una barra de navegación, links para navegar por la web,
+listar los productos en tarjetas, tener botones de compra, link al carro
+de compras y un footer con info de la tienda, también debe tener una
+página de descripción de productos.
+
 Agrupación
 🚀La estructura de carpetas del proyecto es la siguiente:
 
