@@ -3,6 +3,10 @@
     margin-top: -3px;
     font-size: 1.15rem;
   }
+
+  #img-carrito {
+     height: 45px;
+  }
   
   .form-control {
     height: calc(2.5rem + 2px);
@@ -264,5 +268,21 @@
     right: 0;
   }
 
-  
- 
+/*   
+ Carrito */
+
+ .submenu #carrito{
+  display: none;
+}
+.submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right:0;
+
+  top:100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
