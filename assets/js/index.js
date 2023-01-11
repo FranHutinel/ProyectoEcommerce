@@ -15,7 +15,7 @@ function cargarProductos(listadoProductos) {
     let acumulador = "";
     // console.log(listadoProductos);
     listadoProductos.forEach(producto => {
-        console.log(producto);
+        // console.log(producto);
       let template = `
               <div class="col-12 col-md-6 col-lg-4">
                   <div class="card m-auto my-3" style="width: 18rem;">
@@ -55,8 +55,16 @@ function cargarProductos(listadoProductos) {
     } else {
       productosCarro.push(objProducto);
     }
-    alert("Producto agregado correctamente !!");
-    console.log(productosCarro);
+    // alert("Producto agregado correctamente !!");
+
+    Swal.fire({
+      title: '',
+      text: 'Producto agregado correctamente !!',
+      icon: 'success',
+      confirmButtonText: 'Ok'
+    })
+
+    // console.log(productosCarro);
      actualizarCarro(productosCarro);
   
      
@@ -65,14 +73,16 @@ function cargarProductos(listadoProductos) {
   function actualizarCarro(listadoProductos) {
     localStorage.setItem("productos", JSON.stringify(listadoProductos));
   
-    const valorInicial = 0;
-    const sumaProductos = listadoProductos.reduce(
+    let valorInicial = 0;
+    let sumaProductos = listadoProductos.reduce(
       (accumulator, producto) => accumulator = + producto.cantidad,
       valorInicial
     );
   
 
     // console.log(sumaProductos)
+    // const cantidad =  localStorage.getItem("productos");
+    
     document.querySelector("#cantidad-productos").innerText = sumaProductos;
   }
   

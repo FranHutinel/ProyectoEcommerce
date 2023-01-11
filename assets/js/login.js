@@ -1,11 +1,23 @@
 let usuarios = [
     {
-        nombre: "Pedro",
-        password: "123456"
+        nombre: "sebastian.piñera",
+        password: "123456",
+        correo: "elseba@gmail.com"
     },
     {
-        nombre: "Carlos",
-        password: "123456"
+        nombre: "pepe.kast",
+        password: "123456",
+        correo: "pepitokast@gmail.com"
+    },
+    {
+        nombre: "adolfito.hitler",
+        password: "123456",
+        correo: "adolfhitler@gmail.com"
+    },
+    {
+        nombre: "dalai.lama",
+        password: "123456",
+        correo: "dalailama@gmail.com"
     },
 
 ]

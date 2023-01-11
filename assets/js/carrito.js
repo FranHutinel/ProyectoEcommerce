@@ -27,6 +27,7 @@ let cupones = [
       (accumulator, producto) => accumulator + producto.cantidad,
       valorInicial
     );
+
   
     document.querySelector("#cantidad-productos").innerText = sumaProductos;
   }

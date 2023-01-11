@@ -18,10 +18,10 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.min.css" integrity="sha512-NvuRGlPf6cHpxQqBGnPe7fPoACpyrjhlSNeXVUY7BZAj1nNhuNpRBq3osC4yr2vswUEuHq2HtCsY2vfLNCndYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/1e881725e3.js" crossorigin="anonymous"></script>
-    <script type="text/html" src="sweetalert2.min.js"></script>
-    <link type="text/html" rel="stylesheet" href="sweetalert2.min.css">
+    <!-- <script type="text/html" src="sweetalert2.min.js"></script> -->
+    <!-- <link type="text/html" rel="stylesheet" href="sweetalert2.min.css"> -->
    
     
   </head>
@@ -86,7 +86,7 @@
           <ul class="navbar-nav">
         
             <li class="nav-item ml-md-3">
-              <a class="btn btn-primary" href="#"
+              <a class="btn btn-primary" href="/views/login.html"
                 ><i class="bx bxs-user-circle mr-1"></i>
                 <i class="fa-solid fa-user">
                  </i>Mi cuenta</a
@@ -339,49 +339,46 @@
         </div>
     </div>
         <!--Fin carrusel-->
-        <!--comienzo aside-->
-    <section>
+          <!--comienzo aside-->
+        <!-- creamos un solo contenedor con bootstrap para aside y mostrar productos -->
         <div class="container">
+          <!-- le indicamos que este debe ser mostrado en fila -->
+          <div class="row">
+            <!-- asignamos con col-2 el espacio que tendra el aside -->
+            <div class="col-2 tex-center">
+              <h3>Tienda</h3>
+              <img id="portada" src="./assets/img/aside.png" />
+          
+              
+              <div>
+                <button class="btn btn-info">Leer más</button>
+              </div>
 
-            <div class="row">
-                <div class="col-4 tex-center">
-                    <aside class="asideleft">
-                        <h3>Tienda</h3>
-                        <img id="portada" src="./assets/img/aside.png" />
-                    
-                        
-                        <div>
-                          <button class="btn btn-info">Leer más</button>
-                        </div>
+          </br>
 
-                    </br>
+              <img id="portada" src="./assets/img/publizq.png" />
+          
+              <div>
+                  <button class="btn btn-info">Leer más</button>
+                </div>
 
-                        <img id="portada" src="./assets/img/publizq.png" />
-                    
-                        <div>
-                            <button class="btn btn-info">Leer más</button>
-                          </div>
-
-                      </aside>
-
-                  </div>
-                     
-             </div>
-        </div>     
-    </section>
-
-
-         <!--Productos-->
-
-
-         <main class="container">
-          <section id="productos">
-            <div class="row">
-              <!-- CARGAR PRODUCTOS DE FORMA DINAMICA -->
             </div>
-          </section>
-        </main>
-         <!--termino productos-->
+            <!-- asignamos con col-10 el espacio que tendran los productos -->
+
+            <div class="col-10 tex-center">
+              <section id="productos">
+                <div class="row">
+                  <!-- CARGAR PRODUCTOS DE FORMA DINAMICA -->
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+  <!--  -->
+
+     <!--Productos-->
+
+      <!--termino productos--> 
 
     <section>
 
@@ -457,6 +454,7 @@
     ></script>
     <script src="./assets/js/productos.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     
   </body>
 </html>
